@@ -1,0 +1,23 @@
+.control{
+    display: flex;
+    justify-content: space-between;
+}
+
+.control span {
+    font-size: 25px;
+}
+
+.control div .modificar {
+    background-color: #f5c24c;
+    border-color: #f5c24c;
+}
+
+.titulo {
+    background-color: blueviolet;
+    padding: 10px 0;
+    margin-bottom: 50px;
+}
+
+.tabla {
+    width: 100%;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!--BOOTSTRAP 4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5 pt-5">
+            <div class="col-lg-12">
+                <h1 class="display-4">Registro de participantes</h1>
+                <hr class="bg-info">
+                <p class="pb-0 mb-0">Bienvenido, aqui podras llevar a cabo la compra de tus boletos para el evento.</p>
+                <p class="text-danger small pt-0 mt-0">*Todos los campos son obligatorios.</p>
+                <span class="error"></span>
+                <form method="POST" id="insert_form" action="#">
+                    <div class="table-responsive">
+                        <div id="rotorno">
+                            <table class="table" id="item_table">
+                                <tr>
+                                    <th>E-mail</th>
+                                    <th>Nombre completo</th>
+                                    <th>Boleto</th>
+                                    <th><button type="button" name="add" class="btn btn-sm btn-success add">Añadir</button></th>
+                                    <tr>
+                                        <td><input type="email" name="assistant_email[]" class="email form-control assistant_email" /></td>
+                                        <td><input type="text" name="assistant_name[]" class="nombre form-control assistant_name" /></td>
+                                        <td><select name="assistant_ticket[]" class="ticket form-control assistant_ticket">
+                                        <option value="">Selecciona Boleto</option>
+                                        <option value="300">Startup</option>
+                                        <option value="400">Deluxe</option>
+                                        <option value="500">Acceso Total</option>
+                                        <option value="600">Golden Pass</option>
+                                        </select>
+                                        </td>
+                                    </tr>
+                                </tr>
+                            </table>
+                        </div>
+                        <hr class="bg-info">
+                        <div class="control col-lg-12">
+                            <div>
+                                <button type="button" id="confirmar" name="confirmar" class="btn btn-sm btn-info confirmar">Confirmar</button>
+                                <button type="button" name="capturar" class="btn btn-sm btn-info capturar">Capturar</button>
+                                <button type="button" name="limpiar" class="btn btn-sm btn-info limpiar">Limpiar</button>
+                            </div>
+                            <span name="total" id="total" class="precio label label-default">Total</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

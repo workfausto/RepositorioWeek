@@ -1,0 +1,69 @@
+body {
+    background-image: url('../Images/event-banner5.jpg');
+    background-size: cover;
+}
+
+
+/* le estoy dando un ancho a la navbar y tipo de letra*/
+
+.nav,
+.navbar,
+.navbar-brand,
+.navbar-nav {
+    background-color: #760DBF !important;
+    font-size: 20px;
+    min-height: 55px;
+    border-color: #760DBF !important;
+}
+
+div li a {
+    background-color: #760DBF !important;
+    color: white !important;
+}
+
+.navbar:link,
+.navbar:visited {
+    color: #FCD800 !important;
+}
+
+div li a:hover,
+.div li a:active {
+    color: #FCD800 !important;
+}
+
+.panel-heading,
+.panel {
+    background: #760DBF !important;
+    color: #FCD800 !important;
+    font-size: 18px;
+    -moz-border-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+}
+
+
+/* Comentario */
+
+.panel-info {
+    background: gainsboro !important;
+    color: black;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border: 1px solid #760DBF;
+}
+
+
+/*Clase para las sombras con css y bostrap 4  */
+
+.panel-info {
+    box-shadow: 5px 5px 10px #999 !important;
+    /* px tamaño y densidad #color actualmente esta en color tipo blanco*/
+    -webkit-box-shadow: 5px 5px 10px #999 !important;
+    -moz-box-shadow: 5px 5px 10px #999 !important;
+    filter: shadow(color=#999999, direction=135, strength=2) !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title>Configuracion del Perfil</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <!--===============================================================================================-->
+</head>
+
+<body onload="checkCookie()">
+
+    <div class="container" style="align-items: center;">
+        <br><br><br><br><br>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Perfil</h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row" id="usuario">
+                        <div class="col-md-12">
+                            <div class=" row">
+                                <label for="username" class="col-4 col-form-label">idUsuario</label>
+                                <div class="col-8">
+                                    <input id="usernamemodal" name="username" placeholder="Username" class="form-control here" required="required" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="correo">
+                        <label for="email" class="col-4 col-form-label">Email</label>
+                        <div class="col-8">
+                            <input id="emailmodal" name="email" placeholder="Email" class="form-control here" required="required" type="text">
+                        </div>
+                    </div>
+                    <div class=" row">
+                        <label for="newpass" class="col-4 col-form-label">nueva contraseña</label>
+                        <div class="col-8">
+                            <input id="newpass" name="newpass" placeholder="New Password" class="form-control here" type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="offset-4 col-8">
+                            <button type="button" class="btn btn-primary" onclick="actualizacion()">Actualizar Usuario</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <style>
+        body {
+            background-image: url('../../Images/event-banner5.jpg');
+            background-size: cover;
+        }
+    </style>
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="usuario.js"></script>
+</body>
+
+
+
+
+</html>
